@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 12 – Odgovorna poraba in proizvodnja</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #BF8B2E 0%, #8B6914 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .sdg-badge {
+            display: inline-block;
+            background: white;
+            color: #BF8B2E;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        /* HERO SEKCIJA */
+        .hero {
+            background: #f4f4f4;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: #BF8B2E;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* SEKCIJE */
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #BF8B2E;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* PROBLEM */
+        .problem {
+            background: #fff;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .problem-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #BF8B2E;
+        }
+
+        .problem-card h3 {
+            color: #8B6914;
+            margin-bottom: 1rem;
+        }
+
+        /* PODATKI */
+        .stats {
+            background: #BF8B2E;
+            color: white;
+            text-align: center;
+        }
+
+        .stats h2 {
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            background: rgba(255,255,255,0.2);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* REŠITVE */
+        .solutions {
+            background: #f4f4f4;
+        }
+
+        .solutions-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .solution-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .solution-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .solution-item .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .solution-item h3 {
+            color: #BF8B2E;
+            margin-bottom: 0.5rem;
+        }
+
+        /* POZIV K AKCIJI */
+        .cta {
+            background: linear-gradient(135deg, #BF8B2E 0%, #8B6914 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #BF8B2E;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🌍 SDG 12: Odgovorna poraba in proizvodnja</h1>
+        <p>E-odpadki in hitra moda – kako lahko spremenimo svet?</p>
+        <div class="sdg-badge">Cilj 12</div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Bodi pameten potrošnik</h2>
+        <p>Tvoja izbira danes oblikuje jutrišnji svet. Skupaj lahko zmanjšamo e-odpadke in ustvarimo trajnostno prihodnost.</p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="problem">
+        <h2>🔍 Kaj je problem?</h2>
+        <div class="problem-grid">
+            <div class="problem-card">
+                <h3>📱 E-odpadki</h3>
+                <p>Vsak leto nastane več kot 50 milijonov ton e-odpadkov. Večina konča na smetiščih v tretjem svetu, kjer sproščajo strupe v tla in vodo.</p>
+            </div>
+            <div class="problem-card">
+                <h3>👕 Hitra moda</h3>
+                <p>Modna industrija je druga najbolj onesnažujoča industrija na svetu. Oblačila nosimo le nekajkrat, nato pa jih zavržemo.</p>
+            </div>
+            <div class="problem-card">
+                <h3>♻️ Načrtovano zastarevanje</h3>
+                <p>Naprave so narejene tako, da se hitro pokvarijo ali postanejo zastarele, kar nas sili v nenehen nakup novih izdelkov.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PODATKI -->
+    <section class="stats">
+        <h2>📊 Zanimiva dejstva</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">50M+</span>
+                <p>ton e-odpadkov letno</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">70 kg</span>
+                <p>materialov za en telefon</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2-3 leta</span>
+                <p>povprečna uporaba telefona</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">85%</span>
+                <p>tekstila konča na smetiščih</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REŠITVE -->
+    <section class="solutions">
+        <h2>💡 5 preprostih rešitev</h2>
+        <div class="solutions-list">
+            <div class="solution-item">
+                <div class="icon">🔧</div>
+                <h3>Popravi namesto zavrzi</h3>
+                <p>Večino naprav lahko popraviš ali pa jih daš v popravilo. Obišči lokalno popravljalnico.</p>
+            </div>
+            <div class="solution-item">
+                <div class="icon">🔄</div>
+                <h3>Nadgradi napravo</h3>
+                <p>Zamenjaj baterijo, povečaj pomnilnik ali namesti novejši operacijski sistem.</p>
+            </div>
+            <div class="solution-item">
+                <div class="icon">♻️</div>
+                <h3>Ponovno uporabi</h3>
+                <p>Star telefon lahko postane budilka, glasbeni predvajalnik ali varnostna kamera.</p>
+            </div>
+            <div class="solution-item">
+                <div class="icon">🛍️</div>
+                <h3>Kupi rabljeno</h3>
+                <p>Second-hand trgovine in spletne platforme ponujajo kakovostne izdelke po nižji ceni.</p>
+            </div>
+            <div class="solution-item">
+                <div class="icon">🗑️</div>
+                <h3>Recikliraj pravilno</h3>
+                <p>Elektroniko odnesi na zbirno mesto, ne jo metaj v navadne smeti.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- POZIV K AKCIJI -->
+    <section class="cta">
+        <h2> Začni danes!</h2>
+        <p>Preden zavržeš – popravi, nadgradi ali ponovno uporabi!</p>
+        <a href="#" class="cta-button">Deluj odgovorno</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Avtor:</strong> Miha Kenda</p>
+        <p>Projekt SDG 12 – Odgovorna poraba in proizvodnja</p>
+        <p>© 2026 | Šolski projekt</p>
+    </footer>
+
+    <script>
+        // Preprosta animacija ob nalaganju strani
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.solution-item, .problem-card, .stat-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            elements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s, transform 0.6s';
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
